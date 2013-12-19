@@ -1,0 +1,97 @@
+*{
+  padding: 0;margin: 0;
+}
+a{
+  text-decoration: none;
+}
+header{
+  padding: 10px;
+  text-align: center;
+  background: #DDDDDD;
+}
+  header h1{
+    color: #044A65;
+    margin: 10px;
+  }
+  header h3{
+    font-size: 14px;
+  }
+.shadow {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+section h3{
+  text-align: center;
+  padding: 20px;
+}
+footer{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 11px;
+}
+
+
+/* CSS DEMO 1 */
+p#twd_opa_controls {
+  text-align:center;
+}
+#twd_opa_controls span {
+  padding-right:2em;
+  cursor:pointer;
+}
+#twd_opa {
+  position:relative;
+  height:429px;
+  width:600px;
+  margin:0 auto 10px;
+}
+#twd_opa img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+#twd_opa img.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+
+/* CSS DEMO 2 */
+p#slide_flip_controls {
+  text-align:center;
+}
+#slide_flip_controls span {
+  padding-right:2em;
+  cursor:pointer;
+}
+
+#slide_flip_container {
+  height:429px;
+  width:600px;
+  overflow:hidden; /* So the sliding bit doesn't stick out. */
+  margin:0 auto 10px;
+}
+#slide_flip_images {
+  /* This is the bit that moves. It has 4 images, so 4 * 600 = 2400. You could use javascript
+  to work this out instead by counting images. */
+  width:2400px;
+
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
+#slide_flip_images img {
+  padding:0;
+  margin:0;
+  float:left; /* All the images are in a row next to each other. */
+}
